@@ -696,6 +696,8 @@ hr {
   background-position: center;
   background-color: #aaa;
   background-size: cover;
+  -webkit-transition: opacity .15s ease-out;
+  transition: opacity .15s ease-out;
 }
 
 #portfolio-items .item:hover .item-image {
