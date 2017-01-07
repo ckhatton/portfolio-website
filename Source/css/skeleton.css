@@ -713,9 +713,9 @@ hr {
   position: absolute;
   top: 52%;
   left: 52%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-weight: 500;
   font-style: normal;
   line-height: 1.75em;

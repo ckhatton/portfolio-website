@@ -15,7 +15,7 @@ $(document)
       .click(function() {
         $('#mobile-nav').slideToggle();
       });
-  
+
   });
 
 $(window)
