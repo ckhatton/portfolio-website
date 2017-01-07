@@ -31,9 +31,9 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1030px;
+  margin: 10px auto;
+  padding: 100px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -130,6 +130,12 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
 
 
 /* Typography
@@ -382,6 +388,16 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
+#mobile-nav {
+  display: none;
+}
+.site-nav li {
+  float: left;
+  margin-bottom: 0;
+}
+#mobile-menu-link {
+  display: none;
+}
 
 
 /* Clearing
@@ -406,17 +422,67 @@ there.
 */
 
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+@media (max-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 549px) {}
+/* point when grid becomes active */
 @media (min-width: 550px) {}
 
-/* Larger than tablet */
+@media (max-width: 749px) {
+  .site-nav ul li {
+    display: block;
+    text-align: center;
+    float: none !important;
+  }
+  #mobile-nav {
+    margin: 0 0 15px;
+  }
+  #mobile-nav-wrapper {
+    padding: 0 0 1em;
+    border-bottom: 1px solid #ddd;
+  }
+  #mobile-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    color: #999;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 2.5em;
+    display: block;
+    text-align: center;
+  }
+  #mobile-nav .active-link a {
+    color: #999;
+  }
+  #mobile-menu-link {
+    border-bottom: 0px solid #ddd;
+    margin: 0 0 25px;
+    display: block;
+    font-size: 13px;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 0 15px;
+    text-align: center;
+  }
+  #mobile-menu-link a {
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    color: #999;
+  }
+}
 @media (min-width: 750px) {}
 
-/* Larger than desktop */
+@media (max-width: 999px) {}
 @media (min-width: 1000px) {}
 
-/* Larger than Desktop HD */
+@media (max-width: 1199px) {}
 @media (min-width: 1200px) {}
