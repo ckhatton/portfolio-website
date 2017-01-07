@@ -8,6 +8,8 @@ $(document)
     } else {
       $('#portfolio-items .item').addClass('one-half');
     }
+  
+    $('#portfolio-items, footer').fadeIn();
 
     $('.item-image').height($('.item-image').width());
 
