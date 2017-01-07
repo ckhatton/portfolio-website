@@ -50,8 +50,8 @@
 
 @media (min-width: 400px) {
   .container {
-    width: 85%;
-    padding: 0;
+    /*     width: 85%;
+    padding: 0; */
   }
 }
 
@@ -60,7 +60,7 @@
 
 @media (min-width: 550px) {
   .container {
-    width: 80%;
+    /*     width: 80%; */
   }
   .column,
   .columns {
@@ -680,6 +680,14 @@ hr {
   color: #111;
 }
 
+#portfolio-items {
+  padding: 50px 0;
+}
+
+#portfolio-items .item {
+  margin-left: 0;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -696,26 +704,23 @@ hr {
 }
 
 #header:before,
-#page:before,
+#portfolio-items:before,
 #footer:before,
 footer:before,
-.meta-row:before,
 .clear:before,
 #header:after,
-#page:after,
+#portfolio-items:after,
 #footer:after,
 footer:after,
-.meta-row:after,
 .clear:after {
   content: "";
   display: table;
 }
 
 #header:after,
-#page:after,
+#portfolio-items:after,
 #footer:after,
 footer:after,
-.meta-row:after,
 .clear:after {
   clear: both;
 }
@@ -742,13 +747,15 @@ there.
 @media (min-width: 550px) {}
 
 @media (max-width: 749px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+  }
   .site-nav ul li {
     display: block;
     text-align: center;
     float: none !important;
-  }
-  #mobile-nav {
-    margin: 0 0 15px;
   }
   #mobile-nav-wrapper {
     padding: 0 0 1em;
@@ -772,7 +779,7 @@ there.
   }
   #mobile-menu-link {
     border-bottom: 0px solid #ddd;
-    margin: 0 0 25px;
+    margin: 15px 0 25px;
     display: block;
     font-size: 13px;
     line-height: 1.6em;
