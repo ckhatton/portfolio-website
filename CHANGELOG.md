@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.1.2](https://github.com/ckhatton/portfolio-website-template/tree/v0.1.2) (2017-01-07)
+[Full Changelog](https://github.com/ckhatton/portfolio-website-template/compare/v0.1.1...v0.1.2)
+
 ## [v0.1.1](https://github.com/ckhatton/portfolio-website-template/tree/v0.1.1) (2017-01-02)
 [Full Changelog](https://github.com/ckhatton/portfolio-website-template/compare/v0.1...v0.1.1)
 
