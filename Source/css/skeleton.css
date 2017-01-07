@@ -731,6 +731,10 @@ hr {
   display: block;
 }
 
+#footer {
+  margin-top: 50px;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
