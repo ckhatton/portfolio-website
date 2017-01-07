@@ -691,6 +691,10 @@ hr {
   position: relative;
 }
 
+#portfolio-items .item a {
+  cursor: pointer;
+}
+
 #portfolio-items .item .item-image {
   background-repeat: no-repeat;
   background-position: center;
@@ -778,12 +782,23 @@ there.
 
 @media (max-width: 400px) {}
 
-@media (max-width: 549px) {}
+@media (max-width: 549px) {
+  #portfolio-items .item {
+    padding: 0 0 2%;
+  }
+}
 
 
 /* point when grid becomes active */
 
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  #portfolio-items .one-quarter.column {
+    width: 25%;
+  }
+  #portfolio-items .one-half.column {
+    width: 50%;
+  }
+}
 
 @media (max-width: 749px) {
   .container {
