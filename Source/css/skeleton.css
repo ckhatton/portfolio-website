@@ -300,10 +300,19 @@ p {
 
 a {
   color: #1EAEDB;
+  text-decoration: none;
 }
 
 a:hover {
   color: #0FA0CE;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #111;
 }
 
 
@@ -600,6 +609,77 @@ hr {
   display: none;
 }
 
+#header {
+  margin-bottom: 40px;
+}
+
+#logo,
+#top-nav {
+  float: left;
+}
+
+#logo-title {
+  margin: 0;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#logo-title a {
+  color: #222;
+}
+
+#top-nav {
+  float: right;
+  position: relative;
+  z-index: 900;
+  font-size: 13px;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#top-nav nav,
+#top-nav ul,
+#top-nav li,
+#top-nav a {
+  font-size: 13px;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#top-nav nav li {
+  position: relative;
+  margin-right: 30px;
+}
+
+#top-nav nav li:last-child {
+  margin-right: 0px;
+}
+
+#top-nav nav li a {
+  padding: 12.2px 0;
+  display: inline-block;
+  line-height: 26px;
+  color: #999;
+}
+
+#top-nav .active-link>a {
+  color: #111;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -612,6 +692,31 @@ hr {
 .u-cf {
   content: "";
   display: table;
+  clear: both;
+}
+
+#header:before,
+#page:before,
+#footer:before,
+footer:before,
+.meta-row:before,
+.clear:before,
+#header:after,
+#page:after,
+#footer:after,
+footer:after,
+.meta-row:after,
+.clear:after {
+  content: "";
+  display: table;
+}
+
+#header:after,
+#page:after,
+#footer:after,
+footer:after,
+.meta-row:after,
+.clear:after {
   clear: both;
 }
 
@@ -685,6 +790,21 @@ there.
     margin: 0;
     font-size: 16px;
     color: #999;
+  }
+  #header {
+    margin-bottom: 30px;
+  }
+  #logo {
+    float: none;
+  }
+  #logo-title {
+    text-align: center;
+    display: block;
+    letter-spacing: 0;
+    margin: 0;
+  }
+  #top-nav {
+    display: none;
   }
 }
 
