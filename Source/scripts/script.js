@@ -17,6 +17,8 @@ $(document)
       .click(function() {
         $('#mobile-nav').slideToggle();
       });
+  
+    $('body').bind('touchstart', function() {});
 
   });
 
