@@ -9,7 +9,7 @@ $(document)
       $('#portfolio-items .item').addClass('one-half');
     }
   
-    $('#portfolio-items, footer').fadeIn();
+    $('section[role="main"], footer').fadeIn();
 
     $('.item-image').height($('.item-image').width());
 
