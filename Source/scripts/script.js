@@ -19,6 +19,8 @@ $(document)
       });
   
     $('body').bind('touchstart', function() {});
+  
+    console.log('%cConstructed by Christopher Hatton (http://about.me/ckhatton).','font-size:12px;color:#13608B;');
 
   });
 
