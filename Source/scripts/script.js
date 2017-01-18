@@ -8,6 +8,8 @@ $(document)
     } else {
       $('#portfolio-items .item').addClass('one-half');
     }
+  
+    $('section[role="main"], footer').fadeIn();
 
     $('.item-image').height($('.item-image').width());
 
@@ -15,6 +17,10 @@ $(document)
       .click(function() {
         $('#mobile-nav').slideToggle();
       });
+  
+    $('body').bind('touchstart', function() {});
+  
+    console.log('%cConstructed by Christopher Hatton (http://about.me/ckhatton).','font-size:12px;color:#13608B;');
 
   });
 

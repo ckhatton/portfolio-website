@@ -32,7 +32,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1030px;
+/*   max-width: 1030px; */
   margin: 10px auto;
   padding: 100px;
   box-sizing: border-box;
@@ -680,14 +680,14 @@ hr {
   color: #111;
 }
 
-#portfolio-items {
+section[role="main"] {
   padding: 50px 0;
 }
 
 #portfolio-items .item {
   margin-left: 0;
-  padding-top: 1%;
-  padding-left: 1%;
+  padding-top: 0.5%;
+  padding-left: 0.5%;
   position: relative;
 }
 
@@ -751,12 +751,12 @@ hr {
 }
 
 #header:before,
-#portfolio-items:before,
+section[role="main"]:before,
 #footer:before,
 footer:before,
 .clear:before,
 #header:after,
-#portfolio-items:after,
+section[role="main"]:after,
 #footer:after,
 footer:after,
 .clear:after {
@@ -765,7 +765,7 @@ footer:after,
 }
 
 #header:after,
-#portfolio-items:after,
+section[role="main"]:after,
 #footer:after,
 footer:after,
 .clear:after {
@@ -796,10 +796,10 @@ there.
 /* point when grid becomes active */
 
 @media (min-width: 550px) {
-  #portfolio-items .one-quarter.column {
+  section[role="main"] .one-quarter.column {
     width: 25%;
   }
-  #portfolio-items .one-half.column {
+  section[role="main"] .one-half.column {
     width: 50%;
   }
 }
