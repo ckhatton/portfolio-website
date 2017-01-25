@@ -22,6 +22,7 @@
 - Spacing
 - Utilities
 - Clearing
+- fancyBox
 - Media Queries
 */
 
@@ -773,6 +774,40 @@ footer:after,
 }
 
 
+/* fancyBox
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.fancybox-container--ready .fancybox-bg {
+  opacity: 1;
+}
+.fancybox-bg {
+  background: #fff;
+}
+/* .fancybox-button:after, .fancybox-button:before {
+  background-color: #fff;
+} */
+.fancybox-button:hover {
+  background: rgba(0,0,0,.4);
+}
+.fancybox-caption h2 {
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+.fancybox-iframe {
+  margin: 0 auto;
+  width: 75%;
+}
+.fancybox-button--close {
+  top: 5px;
+  right: 5px;
+}
+.fancybox-button--fullscreen {
+  top: 5px;
+  right: 10px;
+}
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -789,6 +824,9 @@ there.
 @media (max-width: 549px) {
   #portfolio-items .item {
     padding: 0 0 2%;
+  }
+  .fancybox-iframe {
+    width: 100%;
   }
 }
 
