@@ -21,20 +21,23 @@ $(document)
     $('body').bind('touchstart', function() {});
   
     $('.fancybox').fancybox({
-      vimeo : {
-        color : 'f00'
-      },
-      afterLoad: function () {
-        if (this.opts.caption) {
-          // Grab the title
-          var newCaption = '<h2>' + this.opts.$orig["0"].dataset.title + '</h2>' + this.opts.caption;
-          // Add the caption beyond the title
-          this.opts.caption = newCaption;
-          console.log('fancyBox caption: ' + this.opts.caption);
-        }
-        
-        $('.fancybox-iframe').height(($('.fancybox-iframe').width()/6)*3);
+      helpers : {
+        media: true
       }
+//       vimeo : {
+//         color : 'f00'
+//       },
+//       afterLoad: function () {
+//         if (this.opts.caption) {
+//           // Grab the title
+//           var newCaption = '<h2>' + this.opts.$orig["0"].dataset.title + '</h2>' + this.opts.caption;
+//           // Add the caption beyond the title
+//           this.opts.caption = newCaption;
+//           console.log('fancyBox caption: ' + this.opts.caption);
+//         }
+        
+//         $('.fancybox-iframe').height(($('.fancybox-iframe').width()/6)*3);
+//       }
     });
   
     $('#portfolio-items').nested({
