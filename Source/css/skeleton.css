@@ -839,6 +839,7 @@ there.
   section#portfolio-items {
     width: 209px;
     margin: 0 auto;
+    height: auto !important;
   }
   #portfolio-items .item {
     padding: 0 0 2px;
