@@ -22,22 +22,23 @@ $(document)
   
     $('.fancybox').fancybox({
       helpers : {
-        media: true
-      }
-//       vimeo : {
-//         color : 'f00'
-//       },
-//       afterLoad: function () {
-//         if (this.opts.caption) {
-//           // Grab the title
-//           var newCaption = '<h2>' + this.opts.$orig["0"].dataset.title + '</h2>' + this.opts.caption;
-//           // Add the caption beyond the title
-//           this.opts.caption = newCaption;
-//           console.log('fancyBox caption: ' + this.opts.caption);
-//         }
+        media: true,
+        title: { type: 'inside'}
+      },
+      vimeo : {
+        color : 'f00'
+      },
+      afterLoad: function () {
+        if ($(this.element).data("caption")) {
+          // Grab the title
+          var newCaption = '<h2>' + this.title + '</h2>' + $(this.element).data("caption");
+          // Add the caption beyond the title
+          this.title = newCaption;
+          console.log('fancyBox caption: ' + this.title);
+        }
         
 //         $('.fancybox-iframe').height(($('.fancybox-iframe').width()/6)*3);
-//       }
+      }
     });
   
     $('#portfolio-items').nested({

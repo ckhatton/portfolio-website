@@ -793,12 +793,12 @@ footer:after,
 .fancybox-button:hover {
   background: rgba(0, 0, 0, .4);
 }
-
-.fancybox-caption h2 {
-  margin-bottom: 0;
+*/
+.fancybox-title h2 {
+  margin-bottom: 2px;
   font-size: 1.8em;
 }
-
+/*
 .fancybox-iframe {
   margin: 0 auto;
   width: 75%;
