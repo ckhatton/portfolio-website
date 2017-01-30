@@ -30,6 +30,7 @@ $(document)
           }
         }
       },
+      height: 400,
       vimeo : {
         color : 'f00'
       },
@@ -77,6 +78,6 @@ $(window)
 
     $('.item-image').height($('.item-image').width());
   
-    $('.fancybox-iframe').height(($('.fancybox-iframe').width()/6)*3);
+//     $('.fancybox-iframe').height(($('.fancybox-iframe').width()/6)*3);
 
   });
