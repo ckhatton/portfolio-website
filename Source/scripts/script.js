@@ -37,6 +37,22 @@ $(document)
       }
     });
   
+    $('#portfolio-items').nested({
+      resizeToFit: false,
+      resizeToFitOptions: { 
+        resizeAny: false
+      },
+      gutter: 2,
+      animate: true,
+      animationOptions: {
+        speed: 100,
+        duration: 300,
+        queue: false
+      }
+    });
+  
+    $(window).resize();
+  
     console.log('%cConstructed by Christopher Hatton (http://about.me/ckhatton).','font-size:12px;color:#13608B;');
 
   });
