@@ -23,7 +23,12 @@ $(document)
     $('.fancybox').fancybox({
       helpers : {
         media: true,
-        title: { type: 'inside'}
+        title: { type: 'inside'},
+        overlay : {
+          css : {
+            'background' : 'rgba(255, 255, 255, 1)'
+          }
+        }
       },
       vimeo : {
         color : 'f00'
