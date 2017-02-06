@@ -821,6 +821,21 @@ footer:after,
   background: #fff;
 }
 
+.fancybox-title {
+  z-index: 0;
+  text-align: center;
+}
+
+.fancybox-nav {
+  top: 100%;
+  height: 55px;
+  width: 10%
+}
+
+.fancybox-nav span {
+  visibility: visible;
+}
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
