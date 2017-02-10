@@ -865,6 +865,14 @@ there.
 /*   .fancybox-iframe {
     width: 100%;
   } */
+  .fancybox-skin {
+    width: 345px !important;
+    margin: 0 auto;
+  }
+  .fancybox-inner {
+    height: 173px !important;
+    width: 345px !important;
+  }
 }
 
 
@@ -883,6 +891,16 @@ there.
   section#portfolio-items {
     width: 418px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .fancybox-skin {
+    width: 510px !important;
+    margin: 0 auto;
+  }
+  .fancybox-inner {
+    height: 260px !important;
+    width: 510px !important;
   }
 }
 
