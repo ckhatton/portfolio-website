@@ -866,12 +866,12 @@ there.
     width: 100%;
   } */
   .fancybox-skin {
-    width: 345px !important;
+    width: 250px !important;
     margin: 0 auto;
   }
   .fancybox-inner {
-    height: 173px !important;
-    width: 345px !important;
+    height: 125px !important;
+    width: 250px !important;
   }
 }
 
